@@ -1,0 +1,130 @@
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*@Nedia*/
+
+@media (max-width: 992px) {
+    #microphoneButton img {
+        max-height: 2vh;
+    }
+    #uploadButton img {
+        max-height: 2vh;
+    }
+    #speechButton img {
+        max-height: 2vh;
+    }
+}
+
+@media (max-width: 576px) {
+    #containerLayout {
+        margin-top: 2vh;
+    }
+    #voiceLogo img {
+        margin-top: 1vh;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #bcbebd !important;
+}
+
+p,
+label {
+    font-family: "Roboto" !important;
+    color: #8e8a95;
+}
+
+#voiceLogo img {
+    padding-left: 1.5vh;
+    max-height: 12vh;
+}
+
+#location,
+a {
+    text-decoration: none !important;
+    color: #4e9df3 !important;
+}
+
+#numberInput {
+    margin-bottom: 2vh;
+}
+
+#dateContainer {
+    font-family: "Roboto" !important;
+    background-color: #edeff1;
+    border-radius: 5px;
+}
+
+#layoutContainer {
+    background-color: #edeff1;
+    border-radius: 5px;
+}
+
+#input {
+    justify-items: center;
+    font-family: "Roboto" !important;
+    color: #8e8a95 !important;
+}
+
+#selectTypeOfMessage {
+    margin-top: 2vh;
+}
+
+#buttonsContainer {
+    border: 1px solid #ced4da !important;
+    border-radius: 5px;
+}
+
+#buttonsContainer button {
+    background-color: #fff !important;
+}
+
+#microphoneButton img {
+    max-height: 5vh;
+    position: relative;
+    justify-content: center;
+}
+
+#uploadButton img {
+    max-height: 5vh;
+}
+
+#inputFile {
+    max-height: 1vh;
+}
+
+#speechButton img {
+    max-height: 5vh;
+}
+
+#selectReproductions {
+    margin-top: 2vh;
+}
+
+#reproductionsInput {
+    font-family: "Roboto" !important;
+    background-color: #edeff1;
+    border-radius: 5px;
+}
+
+#reproductionsTitle {
+    font-size: 2vh !important;
+}
+
+#sendButtonContainer {
+    margin-top: 2vh;
+}
+
+#sendButton {
+    background-color: #f76c82;
+    border: none;
+}
+
+#inputReproductions {
+    font-size: 2vh !important;
+}
+
+#speechText {
+    display: none;
+}

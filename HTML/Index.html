@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/icons/AldeamoLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>AldeamoVoz®</title>
+</head>
+
+<body>
+
+    <header id="Header">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 mt-2">
+                    <img src="../Assets/img/AldeamoLogo-S.png" class="img-fluid mx-auto d-block" alt="BrandLogo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!--vozLogo-->
+
+        <div class="row">
+            <div id="voiceLogo" class="col-3">
+                <img src="../Assets/icons/VoiceLogoTitle.png" class="img-fluid mx-auto" alt="Logo">
+            </div>
+        </div>
+
+        <!--mainContainer-->
+
+        <div class="container">
+
+            <!--contactNumberLabel-->
+
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <p class="fs-6">Ingresar los números de celular separados por coma (,) o por punto y coma (;)</p>
+                </div>
+            </div>
+
+            <!--contactNumberInput-->
+
+            <div class="row">
+                <div id="numberInput" class="col-12">
+                    <input type="number" placeholder="Destinatarios. Ej: 3001112552, 3501114884;" class="form-control" id="input" aria-describedby="emailHelp">
+                </div>
+            </div>
+
+            <!--dateContainer-->
+
+            <div class="container">
+                <div class="row">
+                    <div id="dateContainer" class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mb-1 mt-1">
+                                <label for="basic-addon1">Fecha de envío &nbsp; <span id="location"><a href="https://www.google.com.co/maps/place/Bogot%C3%A1/@4.6482837,-74.2478939,11z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9bfd2da6cb29:0x239d635520a33914!8m2!3d4.7109886!4d-74.072092?hl=es&authuser=0" 
+                            target="_blank">América/Bogotá</a></span></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><img class="img-fluid" src="../Assets/icons/calendar-plus.svg" alt="Icon"></span>
+                                    <input type="datetime-local" class="form-control" placeholder="2021-02-10 09:19" aria-label="datetime-local" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                    </div>
+                    <div id="layoutContainer" class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mb-1 mt-1">
+                                <label for="basic-addon1">Plantilla</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="input-group mb-3">
+                                    <select class="form-select" id="inputLayout">
+                                          <option selected>Seleccione una plantilla</option>
+                                          <option id="TTS" value="1">Plantilla - TTS</option>
+                                          <option id="upload" value="2">Plantilla - Upload</option>
+                                          <option id="record" value="3">Plantilla - Record</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--layoutContainer-->
+
+            <div id="selectTypeOfMessage" class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <p class="fs-6">Selecciona un tipo de mensaje</p>
+                </div>
+            </div>
+
+            <!--messageButtons-->
+
+            <div class="container">
+                <div class="row">
+                    <div id="buttonsContainer" class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row pt-5 pb-5 justify-content-center">
+                            <div id="microphoneContainer" class="col-4 text-center">
+                                <button id="microphoneButton" type="button" class="btn btn-light"><img src="../Assets/icons/Microphone-S.png" alt=""></button>
+                            </div>
+                            <div class="col-4 text-center">
+                                <input type="file" id="UploadImput" style="display: none;">
+                                <button id="uploadButton" type="file" class="btn btn-light"><img src="../Assets/icons/Upload-S.png" alt=""></button>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="row">
+                                    <div class="col"><button id="speechButton" type="button" class="btn btn-light"><img src="../Assets/icons/Speech-S.png" alt=""></button></div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col"><textarea name="" id="speechText" cols="1" rows="1"></textarea></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--reproductionTools-->
+
+            <div id="selectReproductions" class="row">
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div id="reproductionsContainer" class="col-4">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                                    <img class="img-fluid" src="../Assets/icons/arrow-clockwise.svg" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                                    <p id="reproductionsTitle"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div id="reproductionsInput" class="row justify-content-start">
+                                <div class="col-12 pt-1 pb-1">
+                                    <input placeholder="Reproducciones" type="number" class="form-control" id="inputReproductions" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 pt-4">
+                            <div class="progress" style="height: 2.5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sendButton-->
+
+            <div id="sendButtonContainer" class="container-fluid">
+                <div id="sendButtonRow" class="row justify-content-center">
+                    <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 text-center">
+                        <button id="sendButton" type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+        </div>
+    </main>
+    <a id="download"></a>
+    <audio id="audioSRC"></audio>
+    <!--scripts-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="../JS/uploadButton.js"></script>
+    <script src="../JS/speechButton.js"></script>
+    <script src="../JS/recordButtons.js"></script>
+    <script src="../JS/layoutsSound.js"></script>
+</body>
+
+</html>
