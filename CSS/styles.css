@@ -16,8 +16,8 @@
     }
 }
 
-@media (max-width: 576px) {
-    #containerLayout {
+@media (max-width: 992px) {
+    #layoutContainer {
         margin-top: 2vh;
     }
     #voiceLogo img {
